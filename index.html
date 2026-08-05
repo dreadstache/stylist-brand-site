@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal styling, beauty, fit, and fashion expertise grounded in confidence and authentic self-expression." />
+    <title>Zaleene | Image, Style & Confidence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#top"> <em>Zaleene</em></a>
+      <a class="header-link" href="#connect">Connect <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow">Personal styling · Beauty · Fashion</p>
+        <h1 id="hero-title">Style that feels<br /><em>like you.</em></h1>
+        <div class="hero-bottom">
+          <p class="hero-copy">I help people align how they look on the outside with who they are on the inside—through fit, color, beauty, and personal expression.</p>
+          <a class="circle-link" href="#philosophy" aria-label="Discover my philosophy">↓</a>
+        </div>
+      </section>
+
+      <section class="statement" id="philosophy" aria-labelledby="statement-title">
+        <p class="section-label">01 / Philosophy</p>
+        <div>
+          <h2 id="statement-title">Confidence begins with being <em>seen.</em></h2>
+          <p>I believe personal style is not a costume. It is an honest translation of identity: considered, comfortable, and completely your own. The right foundation, fit, silhouette, and finishing touch can change not only how someone looks—but how they move through the world.</p>
+        </div>
+      </section>
+
+      <section class="expertise" aria-labelledby="expertise-title">
+        <div class="section-heading">
+          <p class="section-label">02 / The work</p>
+          <h2 id="expertise-title">A 360° perspective<br />on personal image.</h2>
+        </div>
+        <div class="expertise-grid">
+          <article>
+            <span>01</span>
+            <h3>Style & Fit</h3>
+            <p>Personal styling, intimate apparel fitting, silhouette balancing, garment knowledge, and an eye for what makes each body feel supported.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Beauty & Presence</h3>
+            <p>Cosmetology, hair, makeup, color harmony, and the small details that bring a whole look—and a person’s presence—into focus.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Craft & Couture</h3>
+            <p>Fashion design education, couture sewing, garment construction, alterations, and respect for the artistry behind every piece.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Brand & Experience</h3>
+            <p>Luxury retail, brand training, visual storytelling, modeling, creative direction, and warm, memorable client connection.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="foundation" aria-labelledby="foundation-title">
+        <div class="foundation-mark" aria-hidden="true">✦</div>
+        <div>
+          <p class="section-label">03 / The foundation</p>
+          <h2 id="foundation-title">What we wear underneath is where confidence starts.</h2>
+          <p>Years of intimate apparel fitting taught me that support is never an afterthought. A garment that fits well creates ease; ease creates confidence. It is the same principle I bring to every client interaction, styling decision, and brand experience.</p>
+        </div>
+      </section>
+
+      <section class="credentials" aria-labelledby="credentials-title">
+        <p class="section-label">04 / Background</p>
+        <div>
+          <h2 id="credentials-title">Built across fashion, beauty, and the art of connection.</h2>
+          <ul>
+            <li><span>Experience</span><strong>10+ years in retail, fashion & beauty</strong></li>
+            <li><span>Education</span><strong>Cosmetology degree · 3 years of fashion design</strong></li>
+            <li><span>Specialties</span><strong>Intimate apparel · Couture sewing · Styling · Makeup</strong></li>
+            <li><span>Perspective</span><strong>Designer · Model · Stylist · Brand trainer · Host</strong></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="closing" id="connect" aria-labelledby="connect-title">
+        <p class="section-label">05 / Let's connect</p>
+        <h2 id="connect-title">Style is personal.<br /><em>So is the experience.</em></h2>
+        <p>For opportunities, collaborations, and conversations about client experience, image, and brand.</p>
+        <form class="contact-form" action="https://formsubmit.co/invaderzalien@icloud.com" method="post">
+          <input id="contact-subject" name="_subject" type="hidden" value="New Website Contact" />
+          <input id="contact-next" name="_next" type="hidden" value="" />
+          <input name="_captcha" type="hidden" value="false" />
+          <div class="contact-row">
+            <label for="contact-name">Name</label>
+            <input id="contact-name" name="name" type="text" placeholder="Your name" autocomplete="name" required />
+          </div>
+          <div class="contact-row">
+            <label for="contact-email">Email</label>
+            <input id="contact-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required />
+          </div>
+          <div class="contact-row">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" placeholder="Tell me about your project, event, or idea." rows="5" required></textarea>
+          </div>
+          <button id="contact-submit" type="submit">Send message</button>
+        </form>
+        <p id="contact-success" class="contact-success" hidden aria-live="polite">Message sent. Thank you, I will get back to you soon.</p>
+      </section>
+    </main>
+
+    <footer>
+      <span>© <span id="year"></span> Zaleene</span>
+      <span>Image · Style · Confidence</span>
+    </footer>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      const contactForm = document.querySelector('.contact-form');
+      const contactSuccess = document.getElementById('contact-success');
+      const nextInput = document.getElementById('contact-next');
+      const url = new URL(window.location.href);
+      const isSent = url.searchParams.get('sent') === '1';
+
+      if (nextInput) {
+        const returnUrl = `${window.location.origin}${window.location.pathname}?sent=1#connect`;
+        nextInput.value = returnUrl;
+      }
+
+      if (isSent && contactSuccess) {
+        contactSuccess.hidden = false;
+        url.searchParams.delete('sent');
+        history.replaceState({}, '', `${url.pathname}${url.search}${url.hash}`);
+      }
+
+      if (contactForm) {
+        const submitButton = document.getElementById('contact-submit');
+
+        contactForm.addEventListener('submit', () => {
+          const name = document.getElementById('contact-name').value.trim();
+          const subjectInput = document.getElementById('contact-subject');
+          const senderName = name || 'Unknown Sender';
+
+          subjectInput.value = `New Website Contact - ${senderName}`;
+
+          if (submitButton) {
+            submitButton.disabled = true;
+            submitButton.textContent = 'Sending...';
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
