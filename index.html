@@ -17,13 +17,17 @@
     </header>
 
     <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
+      <section class="hero" id="hero" aria-labelledby="hero-title">
         <p class="eyebrow">Personal styling · Beauty · Fashion</p>
         <h1 id="hero-title">Style that feels<br /><em>like you.</em></h1>
         <div class="hero-bottom">
           <p class="hero-copy">I help people align how they look on the outside with who they are on the inside—through fit, color, beauty, and personal expression.</p>
           <a class="circle-link" href="#philosophy" aria-label="Discover my philosophy">↓</a>
         </div>
+        <nav class="section-nav" aria-label="Hero section navigation">
+          <a class="section-nav-btn" href="#top" aria-label="Go to page top">↑</a>
+          <a class="section-nav-btn" href="#philosophy" aria-label="Go to philosophy section">↓</a>
+        </nav>
       </section>
 
       <section class="statement" id="philosophy" aria-labelledby="statement-title">
@@ -32,9 +36,13 @@
           <h2 id="statement-title">Confidence begins with being <em>seen.</em></h2>
           <p>I believe personal style is not a costume. It is an honest translation of identity: considered, comfortable, and completely your own. The right foundation, fit, silhouette, and finishing touch can change not only how someone looks—but how they move through the world.</p>
         </div>
+        <nav class="section-nav" aria-label="Philosophy section navigation">
+          <a class="section-nav-btn" href="#hero" aria-label="Go to hero section">↑</a>
+          <a class="section-nav-btn" href="#expertise" aria-label="Go to expertise section">↓</a>
+        </nav>
       </section>
 
-      <section class="expertise" aria-labelledby="expertise-title">
+      <section class="expertise" id="expertise" aria-labelledby="expertise-title">
         <div class="section-heading">
           <p class="section-label">02 / The work</p>
           <h2 id="expertise-title">A 360° perspective<br />on personal image.</h2>
@@ -61,18 +69,26 @@
             <p>Luxury retail, brand training, visual storytelling, modeling, creative direction, and warm, memorable client connection.</p>
           </article>
         </div>
+        <nav class="section-nav" aria-label="Expertise section navigation">
+          <a class="section-nav-btn" href="#philosophy" aria-label="Go to philosophy section">↑</a>
+          <a class="section-nav-btn" href="#foundation" aria-label="Go to foundation section">↓</a>
+        </nav>
       </section>
 
-      <section class="foundation" aria-labelledby="foundation-title">
+      <section class="foundation" id="foundation" aria-labelledby="foundation-title">
         <div class="foundation-mark" aria-hidden="true">✦</div>
         <div>
           <p class="section-label">03 / The foundation</p>
           <h2 id="foundation-title">What we wear underneath is where confidence starts.</h2>
           <p>Years of intimate apparel fitting taught me that support is never an afterthought. A garment that fits well creates ease; ease creates confidence. It is the same principle I bring to every client interaction, styling decision, and brand experience.</p>
         </div>
+        <nav class="section-nav" aria-label="Foundation section navigation">
+          <a class="section-nav-btn" href="#expertise" aria-label="Go to expertise section">↑</a>
+          <a class="section-nav-btn" href="#background" aria-label="Go to background section">↓</a>
+        </nav>
       </section>
 
-      <section class="credentials" aria-labelledby="credentials-title">
+      <section class="credentials" id="background" aria-labelledby="credentials-title">
         <p class="section-label">04 / Background</p>
         <div>
           <h2 id="credentials-title">Built across fashion, beauty, and the art of connection.</h2>
@@ -83,6 +99,10 @@
             <li><span>Perspective</span><strong>Designer · Model · Stylist · Brand trainer · Host</strong></li>
           </ul>
         </div>
+        <nav class="section-nav" aria-label="Background section navigation">
+          <a class="section-nav-btn" href="#foundation" aria-label="Go to foundation section">↑</a>
+          <a class="section-nav-btn" href="#connect" aria-label="Go to connect section">↓</a>
+        </nav>
       </section>
 
       <section class="closing" id="connect" aria-labelledby="connect-title">
@@ -108,6 +128,10 @@
           <button id="contact-submit" type="submit">Send message</button>
         </form>
         <p id="contact-success" class="contact-success" hidden aria-live="polite">Message sent. Thank you, I will get back to you soon.</p>
+        <nav class="section-nav" aria-label="Connect section navigation">
+          <a class="section-nav-btn" href="#background" aria-label="Go to background section">↑</a>
+          <a class="section-nav-btn" href="#top" aria-label="Go to page top">↓</a>
+        </nav>
       </section>
     </main>
 
