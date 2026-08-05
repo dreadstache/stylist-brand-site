@@ -9,7 +9,7 @@ No framework, no build process, no runtime dependencies.
 - `index.html`: complete page markup, content, and small client-side form script.
 - `styles.css`: full design system and responsive styling.
 - `images/`: visual references and hero image assets.
-	- `stylist01.jpg` is used as the hero mood image.
+  - `stylist01.jpg` is used as the hero mood image.
 - `CNAME`: GitHub Pages custom domain configuration (`zalien.me`).
 
 ## Current Live Setup
@@ -59,19 +59,20 @@ Important:
 1. Commit and push changes to `master`.
 2. GitHub Pages auto-builds from repository root.
 3. If Pages queue appears stale, manually trigger a build:
-	 - `gh api -X POST repos/dreadstache/stylist-brand-site/pages/builds`
+
+- `gh api -X POST repos/dreadstache/stylist-brand-site/pages/builds`
 
 ## Domain and DNS Notes
 
 For `zalien.me` + `www.zalien.me` on GitHub Pages:
 
 - Apex `A` records:
-	- `185.199.108.153`
-	- `185.199.109.153`
-	- `185.199.110.153`
-	- `185.199.111.153`
+  - `185.199.108.153`
+  - `185.199.109.153`
+    - `185.199.110.153`
+    - `185.199.111.153`
 - `www` CNAME:
-	- `dreadstache.github.io`
+  - `dreadstache.github.io`
 
 After DNS propagation:
 
