@@ -1,6 +1,6 @@
 :root {
 	--ink: #1a1318;
-	--paper: #f3ebe1;
+	--paper: #efe4d4;
 	--plum: #4a1e3d;
 	--burgundy: #681935;
 	--wine: #7a1230;
@@ -54,6 +54,15 @@ body {
 }
 .hero > * { position: relative; z-index: 1; }
 .eyebrow { color: rgba(248,238,229,.86); font: .72rem "DM Mono", monospace; letter-spacing: .1em; text-transform: uppercase; }
+.hero .section-nav {
+	--nav-fg: rgba(248,238,229,.86);
+	--nav-border: rgba(248,238,229,.46);
+	--nav-bg: rgba(248,238,229,.1);
+}
+.hero .section-nav-hint {
+	color: var(--nav-fg);
+	opacity: 1;
+}
 h1, h2, h3, p { margin-top: 0; }
 h1, h2 { font-weight: 500; letter-spacing: -.055em; line-height: .95; }
 h1 { max-width: 1000px; margin: clamp(2rem, 6vw, 5rem) 0; font-size: clamp(4.3rem, 11.5vw, 10rem); }
