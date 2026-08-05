@@ -1,31 +1,85 @@
-# Personal Brand Site
+# Zaleene Brand Site
 
-An interview-ready, single-page personal brand site. It needs no build step, framework, database, or account besides GitHub.
+Single-page personal brand website for Zaleene, built with plain HTML and CSS.
 
-## Before publishing (five minutes)
+No framework, no build process, no runtime dependencies.
 
-1. Open `index.html` in a text editor.
-2. Replace every `Your Name` / `YOUR NAME` with the preferred name.
-3. Replace `hello@yourdomain.com` with a real email address.
-4. Optionally edit the closing paragraph and credentials if a detail needs to be more specific.
-5. Double-click `index.html` to preview it in a browser.
+## Project Structure
 
-## Publish with GitHub Pages
+- `index.html`: complete page markup, content, and small client-side form script.
+- `styles.css`: full design system and responsive styling.
+- `images/`: visual references and hero image assets.
+	- `stylist01.jpg` is used as the hero mood image.
+- `CNAME`: GitHub Pages custom domain configuration (`zalien.me`).
 
-1. Create a new GitHub repository, such as `yourname-style`.
-2. Upload `index.html` and `styles.css` from this folder to the repository root (not inside another folder).
-3. In the repository, open **Settings → Pages**.
-4. Under **Build and deployment**, select **Deploy from a branch**, then choose `main` and `/ (root)`, and save.
-5. GitHub will provide an address like `https://username.github.io/yourname-style/` within a few minutes.
+## Current Live Setup
 
-### Connect an existing custom domain
+- Repository: `dreadstache/stylist-brand-site`
+- Branch for deployment: `master`
+- Hosting: GitHub Pages
+- Custom domain: `zalien.me`
+- Also supported: `www.zalien.me` (CNAME to GitHub Pages)
 
-1. In **Settings → Pages**, enter the domain in **Custom domain** and save.
-2. At the domain provider, follow the DNS values GitHub displays. For a `www` subdomain this is usually a CNAME record pointing to `username.github.io`.
-3. Wait for GitHub to verify the domain, then enable **Enforce HTTPS**.
+## Design Direction
 
-The current Google Sites page can remain online until the custom domain verification completes, then point the domain DNS to GitHub Pages. This avoids a blank-page intermission—the internet's least glamorous magic trick.
+The current aesthetic is a warm editorial palette built from the provided visual references:
 
-## Google Sites option
+- Plum / burgundy / wine tones
+- Deep teal accents
+- Antique gold highlights
+- Antique ivory typography on dark sections
+- Slightly warm, antique-beige paper background for light surfaces
 
-Google Sites cannot host this custom HTML/CSS as a real site; it only supports an embedded page. If you must keep Google Sites as the main address, publish this site through GitHub Pages and use **Insert → Embed → By URL** in Google Sites. Direct GitHub Pages is the better interview-day choice: it is faster, cleaner, and looks intentional.
+## Navigation UX
+
+- Hero section: single "Next" down-arrow control
+- Middle sections: subtle up/down navigation controls with "Next" label
+- Final section: single "Back to top" control
+
+## Contact Form Behavior
+
+The form submits through FormSubmit (no backend required in this repo):
+
+- Endpoint: `https://formsubmit.co/invaderzalien@icloud.com`
+- Dynamic subject format: `New Website Contact - {Sender Name}`
+- Includes a loading state (`Sending...`) on submit
+- Redirects back with `?sent=1#connect` and shows a "Message sent" confirmation
+
+Important:
+
+- FormSubmit requires one-time email activation for the target address.
+
+## Local Preview
+
+1. Open `index.html` directly in a browser for quick visual checks.
+2. For best behavior parity with hosted mode, use a lightweight local server if desired.
+
+## Deploy / Update Workflow
+
+1. Commit and push changes to `master`.
+2. GitHub Pages auto-builds from repository root.
+3. If Pages queue appears stale, manually trigger a build:
+	 - `gh api -X POST repos/dreadstache/stylist-brand-site/pages/builds`
+
+## Domain and DNS Notes
+
+For `zalien.me` + `www.zalien.me` on GitHub Pages:
+
+- Apex `A` records:
+	- `185.199.108.153`
+	- `185.199.109.153`
+	- `185.199.110.153`
+	- `185.199.111.153`
+- `www` CNAME:
+	- `dreadstache.github.io`
+
+After DNS propagation:
+
+1. Confirm GitHub Pages domain verification.
+2. Enable **Enforce HTTPS** in GitHub Pages settings when available.
+
+## Editing Notes
+
+- Keep files ASCII unless a character is intentionally needed.
+- Preserve the current responsive behavior and section semantics.
+- When adjusting colors, update root variables first in `styles.css` to maintain consistency.
